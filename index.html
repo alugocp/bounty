@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sandbox Bounty Board</title>
+  <link rel="stylesheet" href="styles/theme.css">
+  <link rel="stylesheet" href="styles/adding.css">
+  <link rel="stylesheet" href="styles/bounty.css">
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/controls.js"></script>
+  <script src="scripts/data.js"></script>
+</head>
+<body>
+  <div class="tabs">
+    <div data="current">Bounties</div>
+    <div data="old">Old</div>
+    <div data="add">Add</div>
+  </div>
+  <div class="content">
+    <div class="current bounty">
+      <div class="loading">Loading...</div>
+    </div>
+    <div class="old bounty"></div>
+    <div class="add">
+      <div>
+        <input type="text" class="name" placeholder="Name"></input><br>
+        <textarea placeholder="Description"></textarea><br>
+        <input type="text" class="reward" placeholder="Reward"></input><br>
+        <button class="add-button">Add</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
