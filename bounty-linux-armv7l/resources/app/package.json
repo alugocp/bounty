@@ -1,0 +1,15 @@
+{
+  "name": "sandbox-bounty-board",
+  "version": "1.0.0",
+  "description": "A task manager for Sandbox",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "author": "Alex Lugo",
+  "devDependencies": {
+    "electron": "^6.0.0",
+    "electron-packager": "^14.0.4"
+  }
+}

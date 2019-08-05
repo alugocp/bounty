@@ -9,6 +9,7 @@
   "repository": "https://github.com/electron/electron-quick-start",
   "author": "Alex Lugo",
   "devDependencies": {
-    "electron": "^6.0.0"
+    "electron": "^6.0.0",
+    "electron-packager": "^14.0.4"
   }
 }
