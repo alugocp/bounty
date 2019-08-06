@@ -18,7 +18,7 @@ def write_file():
     resp=Response()
     resp.headers["Access-Control-Allow-Origin"]="*"
     if(version[0]=="3"): data=unquote(request.query_string.decode("utf-8"))
-    else: data=urlparse(request.query_string.decode("utf-8"))
+    else: data=urlparse(request.query_string.decode("utf-8")).geturl()
     file=open("bounties.json","w")
     file.write(data)
     file.close()
