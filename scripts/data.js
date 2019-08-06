@@ -1,5 +1,5 @@
 $(window).ready(function(){
-  $.get("bounties.json",null,function(data){
+  $.get("http://localhost:2017/",null,function(data){
     if(typeof data=="string") data=JSON.parse(data);
     window.data=data;
     loadBounties(data);
@@ -55,5 +55,5 @@ function loadBounties(data){
             }
           }))));
   }
-  $.get("http://localhost:2017",JSON.stringify(data),(d) => console.log(d),"json");
+  $.get("http://localhost:2017/write",JSON.stringify(data),(d) => console.log(d),"json");
 }
