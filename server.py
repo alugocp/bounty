@@ -7,11 +7,11 @@ app = Flask(__name__)
 
 @app.route("/",methods=["GET"])
 def load_file():
-    content="[]"
     try:
         file=open("bounties.json","r")
         content=file.read()
         file.close()
+    except: content="[]"
     if len(content)==0: content="[]"
     resp=Response(content)
     resp.headers["Access-Control-Allow-Origin"]="*"
